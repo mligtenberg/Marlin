@@ -666,13 +666,13 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
-    #define DEFAULT_Kp_LIST {  21.73,  21.73 }
-    #define DEFAULT_Ki_LIST {   1.54,   1.54 }
-    #define DEFAULT_Kd_LIST {  76.55,  76.55 }
+    #define DEFAULT_Kp_LIST {  35.82,  35.82 }
+    #define DEFAULT_Ki_LIST {   4.03,   4.03 }
+    #define DEFAULT_Kd_LIST {  79.52,  79.52 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    #define DEFAULT_Kp  35.82
+    #define DEFAULT_Ki   4.03
+    #define DEFAULT_Kd  79.52
   #endif
 #endif
 
@@ -1171,7 +1171,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 127 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
